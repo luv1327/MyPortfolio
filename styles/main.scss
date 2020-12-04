@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
+
+$skyBlueDark: #75d4c3;
+$skyBlueLight: #9ddfd3;
+$darkPurple: #31326f;
+$lightRed: #f46e6e;
+$darkRed: #ff4d4d;
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  .nav-left {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    background-color: $skyBlueDark;
+    width: 100%;
+    .nav-links {
+      color: white;
+      text-decoration: none;
+    }
+    .brand {
+      color: $darkPurple;
+      font-family: "Montserrat", sans-serif;
+      font-size: larger;
+    }
+    ul {
+      width: 60%;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+    }
+  }
+  .nav-right {
+    display: none;
+    padding: 1em;
+    .nav-logos {
+      object-fit: contain;
+      height: 30px;
+    }
+  }
+}
+
+.hero {
+  display: grid;
+  background-color: $skyBlueLight;
+  text-align: center;
+  padding: 5em 1em;
+  color: white;
+  .hero-left {
+    .meet {
+      display: flex;
+      margin: 0 auto;
+      width: 150px;
+      text-align: center;
+      color: $darkPurple;
+      margin-top: 1em;
+    }
+    .user-logo {
+      object-fit: contain;
+      height: 15px;
+      margin-right: 5px;
+      margin-top: 3px;
+    }
+    .scroll {
+      padding: 10px 0px;
+      margin-top: 1em;
+    }
+  }
+  .hero-right {
+    display: none;
+  }
+}
+
+.projects {
+  background-color: rgb(253, 250, 250);
+  text-align: center;
+  .project {
+    width: 80%;
+    margin: 2em auto;
+    .project-left {
+      padding: 1em;
+      h3 {
+        color: $darkRed;
+        letter-spacing: 1px;
+      }
+      p {
+        padding: 0.5em 0 1.5em 0;
+      }
+      button {
+        padding: 0.2em 1em;
+        margin: 0.5em 5px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+      }
+      .visit {
+        background-color: $darkRed;
+        color: #fff;
+        margin-top: 1em;
+      }
+      .github {
+        background-color: black;
+        color: white;
+      }
+    }
+    .netflix-clone {
+      object-fit: contain;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+
+.skills {
+  background-color: $darkPurple;
+  width: 100%;
+  text-align: center;
+  padding : 1em 0;
+  .card {
+    width: 80%;
+    margin: 2em auto;
+    border-radius: 1em;
+    height: auto;
+    background-color: white;
+    padding: 3em;
+    .card-image {
+      object-fit: contain;
+      height: 50px;
+      margin: 0.2em 0;
+    }
+    h5 {
+      margin: 2em 0;
+    }
+    p {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.aboutme {
+  background-color: $skyBlueLight;
+  text-align: center;
+  margin-top: 2.5em;
+  padding: 2em;
+  width: 100%;
+  .aboutme-image {
+    object-fit: contain;
+    height: 80px;
+    margin: 1em 0;
+  }
+  p {
+    width: 70%;
+    margin: 1.8em auto;
+  }
+  .resume {
+    color: #fff;
+    padding: 0.4em 1em;
+    background-color: $lightRed;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    margin-top: 4em;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 40% auto;
+    .project-left {
+      display: grid;
+      place-content: center;
+      height: auto;
+      text-align: left;
+      .buttons {
+        text-align: center;
+        margin-top: 1em;
+      }
+      button {
+        width: 50%;
+      }
+    }
+    .netflix-clone {
+      margin-left: 20%;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5em;
+    margin-top: 4em;
+    .card {
+      margin-bottom: -3em;
+    }
+  }
+  .aboutme {
+    margin-top: 6em;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 66% auto;
+    background-color: unset;
+    .nav-left {
+      background-color: $skyBlueDark;
+    }
+    .nav-right {
+      display: block;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .hero {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 66% auto;
+    background-color: unset;
+    padding: 0;
+    .hero-left {
+      background-color: $skyBlueLight;
+      padding: 6em 8em 6em 4em;
+      text-align: left;
+      h1 {
+        font-size: 3em;
+        width: 250px;
+      }
+      .meet {
+        margin-left: 0;
+      }
+    }
+    .hero-right {
+      display: unset;
+      .hero-graphics {
+        width: 100%;
+        margin-left: -98%;
+        height: 100%;
+        margin-top: 5%;
+      }
+    }
+  }
+}

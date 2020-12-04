@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1em;
+  background-color: #75d4c3;
+  width: 100%;
+}
+
+nav .nav-left .nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+nav .nav-left .brand {
+  color: #31326f;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+}
+
+nav .nav-left ul {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .nav-right {
+  display: none;
+  padding: 1em;
+}
+
+nav .nav-right .nav-logos {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 30px;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  background-color: #9ddfd3;
+  text-align: center;
+  padding: 5em 1em;
+  color: white;
+}
+
+.hero .hero-left .meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  color: #31326f;
+  margin-top: 1em;
+}
+
+.hero .hero-left .user-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 15px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+.hero .hero-left .scroll {
+  padding: 10px 0px;
+  margin-top: 1em;
+}
+
+.hero .hero-right {
+  display: none;
+}
+
+.projects {
+  background-color: #fdfafa;
+  text-align: center;
+}
+
+.projects .project {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.projects .project .project-left {
+  padding: 1em;
+}
+
+.projects .project .project-left h3 {
+  color: #ff4d4d;
+  letter-spacing: 1px;
+}
+
+.projects .project .project-left p {
+  padding: 0.5em 0 1.5em 0;
+}
+
+.projects .project .project-left button {
+  padding: 0.2em 1em;
+  margin: 0.5em 5px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.projects .project .project-left .visit {
+  background-color: #ff4d4d;
+  color: #fff;
+  margin-top: 1em;
+}
+
+.projects .project .project-left .github {
+  background-color: black;
+  color: white;
+}
+
+.projects .project .netflix-clone {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.skills {
+  background-color: #31326f;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.skills .card {
+  width: 80%;
+  margin: 2em auto;
+  border-radius: 1em;
+  height: auto;
+  background-color: white;
+  padding: 3em;
+}
+
+.skills .card .card-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 50px;
+  margin: 0.2em 0;
+}
+
+.skills .card h5 {
+  margin: 2em 0;
+}
+
+.skills .card p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aboutme {
+  background-color: #9ddfd3;
+  text-align: center;
+  margin-top: 2.5em;
+  padding: 2em;
+  width: 100%;
+}
+
+.aboutme .aboutme-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 80px;
+  margin: 1em 0;
+}
+
+.aboutme p {
+  width: 70%;
+  margin: 1.8em auto;
+}
+
+.aboutme .resume {
+  color: #fff;
+  padding: 0.4em 1em;
+  background-color: #f46e6e;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    margin-top: 4em;
+  }
+  .project {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .project .project-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    height: auto;
+    text-align: left;
+  }
+  .project .project-left .buttons {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .project .project-left button {
+    width: 50%;
+  }
+  .project .netflix-clone {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5em;
+    margin-top: 4em;
+  }
+  .skills .card {
+    margin-bottom: -3em;
+  }
+  .aboutme {
+    margin-top: 6em;
+  }
+  nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background-color: unset;
+  }
+  nav .nav-left {
+    background-color: #75d4c3;
+  }
+  nav .nav-right {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .hero {
+    height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background-color: unset;
+    padding: 0;
+  }
+  .hero .hero-left {
+    background-color: #9ddfd3;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .hero-left h1 {
+    font-size: 3em;
+    width: 250px;
+  }
+  .hero .hero-left .meet {
+    margin-left: 0;
+  }
+  .hero .hero-right {
+    display: unset;
+  }
+  .hero .hero-right .hero-graphics {
+    width: 100%;
+    margin-left: -98%;
+    height: 100%;
+    margin-top: 5%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
