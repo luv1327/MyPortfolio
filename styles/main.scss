@@ -7,15 +7,23 @@ $darkPurple: #31326f;
 $lightRed: #f46e6e;
 $darkRed: #ff4d4d;
 
-// html {
-//   scroll-behavior: smooth;
-// }
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.instagram-clone {
+  border: 1px solid rgb(199, 199, 199);
 }
 
 nav {
@@ -28,10 +36,10 @@ nav {
     .nav-links {
       color: white;
       text-decoration: none;
+      font-size: .8em;
     }
     .brand {
       color: $darkPurple;
-      font-family: "Montserrat", sans-serif;
       font-size: larger;
     }
     ul {
@@ -75,6 +83,8 @@ nav {
     .scroll {
       padding: 10px 0px;
       margin-top: 1em;
+      height: 100px;
+      width: 40px;
     }
   }
   .hero-right {
@@ -97,7 +107,7 @@ nav {
       p {
         padding: 0.5em 0 1.5em 0;
       }
-      button {
+      .button {
         padding: 0.2em 1em;
         margin: 0.5em 5px;
         border-radius: 20px;
@@ -146,6 +156,13 @@ nav {
     p {
       width: 80%;
       margin: 0 auto;
+
+    }
+    .card-skills {
+      width : 60%;
+      margin: 0 auto;
+      text-align: center;
+      list-style: none;
     }
   }
 }
@@ -190,7 +207,7 @@ nav {
         text-align: center;
         margin-top: 1em;
       }
-      button {
+      .button {
         width: 50%;
       }
     }
@@ -207,7 +224,8 @@ nav {
     padding-top: 5em;
     margin-top: 4em;
     .card {
-      margin-bottom: -3em;
+      margin-bottom: -2em;
+
     }
   }
   .aboutme {
@@ -255,4 +273,8 @@ nav {
       }
     }
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

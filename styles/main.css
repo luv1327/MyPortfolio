@@ -8,6 +8,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.instagram-clone {
+  border: 1px solid #c7c7c7;
+}
+
 nav .nav-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,11 +33,11 @@ nav .nav-left {
 nav .nav-left .nav-links {
   color: white;
   text-decoration: none;
+  font-size: .8em;
 }
 
 nav .nav-left .brand {
   color: #31326f;
-  font-family: "Montserrat", sans-serif;
   font-size: larger;
 }
 
@@ -84,6 +94,8 @@ nav .nav-right .nav-logos {
 .hero .hero-left .scroll {
   padding: 10px 0px;
   margin-top: 1em;
+  height: 100px;
+  width: 40px;
 }
 
 .hero .hero-right {
@@ -113,7 +125,7 @@ nav .nav-right .nav-logos {
   padding: 0.5em 0 1.5em 0;
 }
 
-.projects .project .project-left button {
+.projects .project .project-left .button {
   padding: 0.2em 1em;
   margin: 0.5em 5px;
   border-radius: 20px;
@@ -172,6 +184,13 @@ nav .nav-right .nav-logos {
   margin: 0 auto;
 }
 
+.skills .card .card-skills {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+}
+
 .aboutme {
   background-color: #9ddfd3;
   text-align: center;
@@ -221,7 +240,7 @@ nav .nav-right .nav-logos {
     text-align: center;
     margin-top: 1em;
   }
-  .project .project-left button {
+  .project .project-left .button {
     width: 50%;
   }
   .project .netflix-clone {
@@ -239,7 +258,7 @@ nav .nav-right .nav-logos {
     margin-top: 4em;
   }
   .skills .card {
-    margin-bottom: -3em;
+    margin-bottom: -2em;
   }
   .aboutme {
     margin-top: 6em;
@@ -293,5 +312,9 @@ nav .nav-right .nav-logos {
     height: 100%;
     margin-top: 5%;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=main.css.map */
